@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-nunit/master/src/ReportPortal.NUnitExtension/ReportPortal.config.schema",
+  "enabled": true,
+  "server": {
+    "url": "https://demo.reportportal.io/api/v1",
+    "project": "SUPERADMIN_PERSONAL",
+    "authentication": {
+      "uuid": "4440042c-ba7d-4c70-b6b9-9eaefae0ec1e"
+    }
+  },
+  "launch": {
+    "name": "TEST REPORTING",
+    "description": "Use of log functionality",
+    "debugMode": false,
+    "attributes": [ "t0", "t3", "platform:x64" ]
+  }
+}
