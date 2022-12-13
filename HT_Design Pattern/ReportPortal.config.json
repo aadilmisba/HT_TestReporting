@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-nunit/master/src/ReportPortal.NUnitExtension/ReportPortal.config.schema",
   "enabled": true,
   "server": {
-    "url": "https://demo.reportportal.io/api/v1",
+    "url": "http://localhost:8080/api/v1",
     "project": "SUPERADMIN_PERSONAL",
     "authentication": {
       "uuid": "4440042c-ba7d-4c70-b6b9-9eaefae0ec1e"

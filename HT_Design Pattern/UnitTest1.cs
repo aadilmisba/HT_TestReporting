@@ -25,11 +25,11 @@ using TestContext = NUnit.Framework.TestContext;
 
 namespace HT_Design_Pattern
 {
-    [TestClass]
+    [TestFixture]
     public class UnitTest1 
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-        [TestMethod]
+        [TestCase]
         public void TestMethod1()
         {
             log.Debug("Trying to send a mail");
@@ -55,12 +55,13 @@ namespace HT_Design_Pattern
             catch (Exception ex)
             {
                 log.Error("Error occured", ex);
+                throw;
             }
             log.Debug("Mail sent");
 
         }
 
-        [TestCleanup]
+        [TearDown]
         public void Cleanup()
         {
             if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
